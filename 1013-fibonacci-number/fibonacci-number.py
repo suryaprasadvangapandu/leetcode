@@ -2,6 +2,9 @@ class Solution:
     def fib(self, n: int) -> int:
         a=0
         b=1
+        c=0
         for i in range(n):
-            a,b=b,a+b
+            c=a+b
+            a=b
+            b=c
         return a
